@@ -1,6 +1,5 @@
 #pragma once
 
-#pragma once
 
 #define K_UP 72
 #define K_DOWN 80

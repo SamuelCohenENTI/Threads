@@ -76,6 +76,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -90,6 +91,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -102,6 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -116,6 +119,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -123,13 +127,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="4Json\Banana.cpp" />
+    <ClCompile Include="Class Timer\Timer.cpp" />
+    <ClCompile Include="dist\jsoncpp.cpp" />
+    <ClCompile Include="4Json\ICodable.cpp" />
+    <ClCompile Include="4Json\Fruta.cpp" />
+    <ClCompile Include="INodeMap\INodeContent.cpp" />
+    <ClCompile Include="InputSystem\InputSystem.cpp" />
+    <ClCompile Include="INodeMap\Node.cpp" />
+    <ClCompile Include="INodeMap\NodeMap.cpp" />
+    <ClCompile Include="4Json\Manzana.cpp" />
     <ClCompile Include="utils\ConsoleControl.cpp" />
     <ClCompile Include="Threads.cpp" />
+    <ClCompile Include="INodeMap\Vector2.cpp" />
+    <ClCompile Include="x64\ProjectedClass.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="4Json\Banana.h" />
+    <ClInclude Include="Class Timer\Timer.h" />
+    <ClInclude Include="dist\json\json-forwards.h" />
+    <ClInclude Include="dist\json\json.h" />
+    <ClInclude Include="4Json\ICodable.h" />
+    <ClInclude Include="4Json\Fruta.h" />
+    <ClInclude Include="INodeMap\INodeContent.h" />
+    <ClInclude Include="InputSystem\InputSystem.h" />
     <ClInclude Include="InputSystem\InputConst.h" />
+    <ClInclude Include="INodeMap\Node.h" />
+    <ClInclude Include="INodeMap\NodeMap.h" />
+    <ClInclude Include="4Json\Manzana.h" />
     <ClInclude Include="utils\ConsoleControl.h" />
     <ClInclude Include="ThreadsTutorial\tutorial.h" />
+    <ClInclude Include="INodeMap\Vector2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
